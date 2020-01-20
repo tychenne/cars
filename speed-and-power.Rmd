@@ -1,0 +1,9 @@
+---
+title: "Speed vs. Power"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here I plot the `qsec` variable against the `hp` variable, which is the $1/4$ mile time and gross horsepower per vehicle respectively. 

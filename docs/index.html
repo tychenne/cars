@@ -12,7 +12,7 @@
 <meta name="author" content="Ty Chenne" />
 
 
-<title>index</title>
+<title>Exploring (mt)Cars</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -276,7 +276,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="speed-and-distance.html">Speed and Distance</a>
+  <a href="speed-and-power.html">Speed and Power</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -290,32 +290,26 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">index</h1>
+<h1 class="title toc-ignore">Exploring (mt)Cars</h1>
 <h4 class="author">Ty Chenne</h4>
 <h4 class="date">1/20/2020</h4>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-</div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
-</div>
+<p>This is my first published github page as a learning example.</p>
+<p>The dataset I used is called <code>mtcars</code>, which is part of the <code>datasets</code> package that comes with the base R installation.</p>
+<p>Feel free to click on the different links on the navigation bar to view plots of different variables of the mtcars dataset plotted against each other.</p>
+<pre class="r"><code>dim(mtcars)</code></pre>
+<pre><code>## [1] 32 11</code></pre>
+<pre class="r"><code>head(mtcars, 5)</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2</code></pre>
+<p>We can see that there are 32 vehicles each with 11 variables taken.</p>
 
 
 
