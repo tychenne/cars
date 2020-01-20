@@ -5,8 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Speed and Distance"
-      href: speed-and-distance.html
+    - text: "Speed and Power"
+      href: speed-and-power.html
 output:
   html_document:
     theme: cosmo 

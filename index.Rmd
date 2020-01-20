@@ -1,5 +1,5 @@
 ---
-title: "index"
+title: "Exploring (mt)Cars"
 author: "Ty Chenne"
 date: "1/20/2020"
 output: html_document
@@ -9,22 +9,17 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+This is my first published github page as a learning example.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The dataset I used is called `mtcars`, which is part of the `datasets` package that comes with the base R installation.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Feel free to click on the different links on the navigation bar to view plots of different variables of the mtcars dataset plotted against each other.
+
 
 ```{r cars}
-summary(cars)
+dim(mtcars)
+head(mtcars, 5)
 ```
 
-## Including Plots
+We can see that there are 32 vehicles each with 11 variables taken.
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
