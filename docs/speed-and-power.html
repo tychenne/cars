@@ -294,7 +294,13 @@ $(document).ready(function () {
 </div>
 
 
-<p>Here I plot the <code>qsec</code> variable against the <code>hp</code> variable, which is the <span class="math inline">\(1/4\)</span> mile time and gross horsepower per vehicle respectively.</p>
+<p>Here I plot the <code>hp</code> variable against the <code>qsec</code> variable, which is the gross horsepower and <span class="math inline">\(1/4\)</span> mile time per vehicle respectively. I hypothesize that there is a <em>negative</em> correlation between horsepower and quarter mile time because intuitively more power generates faster speeds.</p>
+<pre class="r"><code>library(ggplot2)
+library(datasets)
+ggplot(data = mtcars, aes(x = hp, y = qsec)) +
+            geom_point(aes(colour = factor(cyl)))</code></pre>
+<p><img src="speed-and-power_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Indeed that appears to be the case. I also colour separated different cylinder classes (cylinder is the chamber where the gasoline is burned and turned into power).</p>
 
 
 

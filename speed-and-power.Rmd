@@ -6,4 +6,13 @@ title: "Speed vs. Power"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Here I plot the `qsec` variable against the `hp` variable, which is the $1/4$ mile time and gross horsepower per vehicle respectively. 
+Here I plot the `hp` variable against the `qsec` variable, which is the gross horsepower and $1/4$ mile time per vehicle respectively. I hypothesize that there is a _negative_ correlation between horsepower and quarter mile time because intuitively more power generates faster speeds.  
+
+```{r}
+library(ggplot2)
+library(datasets)
+ggplot(data = mtcars, aes(x = hp, y = qsec)) +
+            geom_point(aes(colour = factor(cyl)))
+```
+
+Indeed that appears to be the case. I also colour separated different cylinder classes (cylinder is the chamber where the gasoline is burned and turned into power). 
